@@ -1,6 +1,4 @@
 import New from "./New";
-// import plant from "./assets/plant.webp";
-// import straw2 from "./assets/straw2.webp";
 
 function App() {
   return (

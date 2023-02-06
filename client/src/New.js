@@ -15,13 +15,14 @@ import {
 import kit from "./assets/kit.webp";
 import cup from "./assets/cup.webp";
 import bambo from "./assets/bambo.webp";
-// import cup1 from "./assets/cup1.webp";
 import cont from "./assets/cont.webp";
 import straw from "./assets/straw.webp";
 import brush from "./assets/brush.webp";
 import LandPage from "./components/LandPage";
 import Card from "./components/Card";
 import cup2 from "./assets/cup2.webp";
+import LetsGo from "./components/LetGo";
+
 import { useState } from "react";
 
 const ZoomInScrollOut = batch(StickyIn(), FadeIn(), ZoomIn());
@@ -30,29 +31,39 @@ const Fadeup = batch(Fade(), Sticky(), Move());
 function New() {
   const [add, setAdd] = useState(false);
   const [added, setAdded] = useState(false);
+  const [land, setLand] = useState(true);
+
+  const handleClick = () => {
+    setLand(!land);
+  };
+
   return (
     <ScrollContainer>
       <ScrollPage page={0}>
         <Animator animation={MoveOut(0, -200)}>
-          <LandPage />
+          {land ? (
+            <LandPage handleClick={handleClick} />
+          ) : (
+            <LetsGo handleClick={handleClick} />
+          )}
         </Animator>
       </ScrollPage>
       <ScrollPage page={1}>
         <div className="bg-blue-200 h-80 flex flex-row items-center justify-center">
           <Animator animation={MoveIn(0, -1000)}>
-            <div className="font-bold text-4xl mr-3 sus">Sustainable</div>
+            <div className="font-extrabold text-5xl mr-3 sus">Sustainable</div>
           </Animator>
           <Animator animation={MoveIn(1000, -1000)}>
-            <div className="font-bold text-4xl mr-3 sus">Products</div>
+            <div className="font-extrabold text-5xl mr-3 sus">Products</div>
           </Animator>
           <Animator animation={MoveIn(-1000, -1000)}>
-            <div className="font-bold text-4xl mr-3 sus">At</div>
+            <div className="font-extrabold text-5xl mr-3 sus">At</div>
           </Animator>
           <Animator animation={MoveIn(-1000, -1000)}>
-            <div className="font-bold text-4xl mr-3 sus">Affordable</div>
+            <div className="font-extrabold text-5xl mr-3 sus">Affordable</div>
           </Animator>
           <Animator animation={MoveIn(1000, -1000)}>
-            <div className="font-bold text-4xl mr-3 sus">Prices</div>
+            <div className="font-extrabold text-5xl mr-3 sus">Prices</div>
           </Animator>
         </div>
       </ScrollPage>
