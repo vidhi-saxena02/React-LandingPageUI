@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/React-LandingPageUI/static/css/main.061d2542.css",
+    "main.js": "/React-LandingPageUI/static/js/main.9a737fa3.js",
+    "static/media/lake.jpg": "/React-LandingPageUI/static/media/lake.a7999e4d2d5806b5589c.jpg",
+    "static/media/kit.webp": "/React-LandingPageUI/static/media/kit.97d828e2bd67c7822839.webp",
+    "static/media/straw.webp": "/React-LandingPageUI/static/media/straw.3e84738dc6e0301a3862.webp",
+    "static/media/pink.png": "/React-LandingPageUI/static/media/pink.ea1be9db1accc6c4a56c.png",
+    "static/media/bambo.webp": "/React-LandingPageUI/static/media/bambo.616d353179ef87e47eda.webp",
+    "static/media/cup2.webp": "/React-LandingPageUI/static/media/cup2.c539d37c1a6aaf3a3db8.webp",
+    "static/media/cup.webp": "/React-LandingPageUI/static/media/cup.477ce4cd2294748c3e28.webp",
+    "static/media/cont.webp": "/React-LandingPageUI/static/media/cont.1442a19c7a4475dfac9c.webp",
+    "static/media/brush.webp": "/React-LandingPageUI/static/media/brush.8ca414393b2f49f4eddb.webp",
+    "index.html": "/React-LandingPageUI/index.html",
+    "main.061d2542.css.map": "/React-LandingPageUI/static/css/main.061d2542.css.map",
+    "main.9a737fa3.js.map": "/React-LandingPageUI/static/js/main.9a737fa3.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.061d2542.css",
+    "static/js/main.9a737fa3.js"
+  ]
+}
